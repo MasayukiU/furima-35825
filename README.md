@@ -1,15 +1,15 @@
 ## users テーブル
 
-| Column              | Type          | Options          |
-| ------------------- | ------------- | ---------------- |
-| email               | string        | unique: true     |
-| encrypted_password  | string        | null: false      |
-| nickname            | string        | null: false      |
-| last_name					  | string        | null: false      |
-| first_name          | string        | null: false      |
-| last_name_reading   | string        | null: false      |
-| first_name_reading  | string        | null: false      |
-| birthday            | date          | null: false      |
+| Column              | Type          | Options                   |
+| ------------------- | ------------- | ------------------------- |
+| email               | string        | unique: true, null: false |
+| encrypted_password  | string        | null: false               |
+| nickname            | string        | null: false               |
+| last_name					  | string        | null: false               |
+| first_name          | string        | null: false               |
+| last_name_reading   | string        | null: false               |
+| first_name_reading  | string        | null: false               |
+| birthday            | date          | null: false               |
 
 ### Association
 has_many :items
@@ -44,7 +44,7 @@ has_one :purchase_history
 
 ### Association
 belongs_to :user
-has_one :item
+belongs_to :item
 has_one :shipping_address
 
 
@@ -56,12 +56,12 @@ has_one :shipping_address
 | prefecture_id       | integer       | null: false       |
 | city                | text          | null: false       |
 | house_number        | text          | null: false       |
-| building_name       | text          | null: false       |
+| building_name       | text          |                   |
 | phone_number        | string        | null: false       |
 | purchase history    | references    | foreign_key: true |
 
 
 ### Association
-belongs_to :purchase_histories
+belongs_to :purchase_history
 
 
