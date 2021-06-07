@@ -60,11 +60,14 @@
                     <mxGeometry y="266" width="230" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="shipping_address 発送先情報" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
+
                     <mxGeometry x="20" y="230" width="230" height="236" as="geometry">
+
                         <mxRectangle x="330" y="270" width="120" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="25" value="郵便番号 postal_code" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="23" vertex="1">
+
                     <mxGeometry y="26" width="230" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="104" value="都道府県 発送元の地域shipping_area" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="23" vertex="1">
