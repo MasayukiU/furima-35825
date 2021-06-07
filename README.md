@@ -49,27 +49,23 @@ has_one :purchase_history
 ### Association
 belongs_to :user
 has_one :items
-belongs_to :shipping_addresses
+belongs_to :orders
 
-
-## Shipping_Address  テーブル
+## orders  テーブル
 
 | Column              | Type          | Options           |
 | ------------------- | ------------- | ----------------- |
 | postal_code         | string        | null: false       |
 | prefecture          | integer       | null: false       |
 | city                | integer       | null: false       |
+| addresses           | integer       | null: false       |
 | house_number        | integer       | null: false       |
 | building_name       | integer       | null: false       |
 | phone_number        | integer       | null: false       |
+
 
 ### Association
 belongs_to :user
 has_one :purchase_history
 
 
-## orders  テーブル
-
-| Column              | Type          | Options           |
-| ------------------- | ------------- | ----------------- |
-| price               | integer       | null: false       |
