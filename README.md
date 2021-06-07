@@ -73,7 +73,3 @@ has_one :purchase_history
 | Column              | Type          | Options           |
 | ------------------- | ------------- | ----------------- |
 | price               | integer       | null: false       |
-
-### Association
-belongs_to :user
-has_one :purchase_history
