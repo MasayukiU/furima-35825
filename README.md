@@ -40,7 +40,7 @@ has_one :purchase_history
 | Column              | Type          | Options           |
 | ------------------- | ------------- | ----------------- |
 | user                | references    | foreign_key: true |
-| items               | references    | foreign_key: true |
+| item                | references    | foreign_key: true |
 
 ### Association
 belongs_to :user
@@ -62,6 +62,6 @@ has_one :shipping_address
 
 
 ### Association
-belongs_to :shipping_address
+belongs_to :purchase_histories
 
 
