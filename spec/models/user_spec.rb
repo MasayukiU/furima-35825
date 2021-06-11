@@ -13,7 +13,7 @@ RSpec.describe User, type: :model do
       end
     end
   end
-  
+
   context '新規登録できないとき' do
     it 'nicknameが空では登録できない' do
       @user.nickname = ''
@@ -35,7 +35,7 @@ RSpec.describe User, type: :model do
     it 'メールアドレスに@を含む必要があること' do
       @user.email = 'aaa.com'
       @user.valid?
-      expect(@user.errors.full_messages).to include("Email is invalid")
+      expect(@user.errors.full_messages).to include('Email is invalid')
     end
     it 'passwordが空では登録できない' do
       @user.password = ''
@@ -51,17 +51,17 @@ RSpec.describe User, type: :model do
     it 'passwordが半角英語のみでは合登録できない' do
       @user.password = 'aaaaaa'
       @user.valid?
-      expect(@user.errors.full_messages).to include "Password Include both letters and numbers"
+      expect(@user.errors.full_messages).to include 'Password Include both letters and numbers'
     end
     it 'passwordが半角数字のみでは場合登録できない' do
       @user.password = '000000'
       @user.valid?
-      expect(@user.errors.full_messages).to include "Password Include both letters and numbers"
+      expect(@user.errors.full_messages).to include 'Password Include both letters and numbers'
     end
     it 'passwordが全角では登録できない' do
       @user.password = 'AAAAAA'
       @user.valid?
-      expect(@user.errors.full_messages).to include "Password Include both letters and numbers"
+      expect(@user.errors.full_messages).to include 'Password Include both letters and numbers'
     end
     it 'passwordとpassword（確認）は、値が一致していないと登録できない' do
       @user.password = 'aaaaa'
