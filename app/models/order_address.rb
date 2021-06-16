@@ -7,9 +7,10 @@ class OrderAddress
 		validates :shipping_area_id, numericality: {other_than: 0, message: "can't be blank"}
 		validates :city
 		validates :house_number
-		validates :phone_number
+		validates :phone_number, format: {with: /\A\d{10,11}\z/}
 		validates :token
-		# validates :price, numericality: {only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 1000000, message: "is invalid"}
+		validates :user_id
+		validates :item_id
 	end
 
 	def save
