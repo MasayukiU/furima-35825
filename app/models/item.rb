@@ -5,13 +5,13 @@ class Item < ApplicationRecord
   belongs_to :item_condition
   belongs_to :shipping_area
   belongs_to :shipping_charge
-
-  has_one_attached :image
+  
+  has_many_attached :images
   belongs_to :user
   has_one :order
 
   with_options presence: true do
-    validates :image
+    validates :images
     validates :item_name
     validates :product_description
     validates :price, format: { with: /\A[0-9]+\z/, message: 'Please enter half-width' },
