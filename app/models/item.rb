@@ -11,7 +11,7 @@ class Item < ApplicationRecord
   has_one :order
 
   with_options presence: true do
-    validates :images
+    # validates :images
     validates :item_name
     validates :product_description
     validates :price, format: { with: /\A[0-9]+\z/, message: 'Please enter half-width' },

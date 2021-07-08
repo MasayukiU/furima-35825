@@ -1,7 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Item.create(item_name: 'ジャケット', price: 20000, product_description: "購入したジャケットです", user_id: 2, category_id: 2, item_condition_id: 2, shipping_area_id: 3, shipping_charge_id: 2, estimated_time_id: 3)
+Item.create(item_name: 'スラックス', price: 20000, product_description: "購入したジャケットです", user_id: 2, category_id: 2, item_condition_id: 2, shipping_area_id: 3, shipping_charge_id: 2, estimated_time_id: 3)
+Item.create(item_name: '靴', price: 20000, product_description: "購入したジャケットです", user_id: 2, category_id: 2, item_condition_id: 2, shipping_area_id: 3, shipping_charge_id: 2, estimated_time_id: 3)
+Item.create(item_name: 'ネクタイ', price: 20000, product_description: "購入したジャケットです", user_id: 2, category_id: 2, item_condition_id: 2, shipping_area_id: 3, shipping_charge_id: 2, estimated_time_id: 3)
+Item.create(item_name: '靴下', price: 20000, product_description: "購入したジャケットです", user_id: 2, category_id: 2, item_condition_id: 2, shipping_area_id: 3, shipping_charge_id: 2, estimated_time_id: 3)
+Item.create(item_name: 'ハット', price: 20000, product_description: "うまくつけます", user_id: 2, category_id: 2, item_condition_id: 2, shipping_area_id: 3, shipping_charge_id: 2, estimated_time_id: 3)
