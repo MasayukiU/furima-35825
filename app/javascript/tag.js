@@ -16,7 +16,7 @@ if (location.pathname.match("items/new")){
             const childElement = document.createElement("div");
             childElement.setAttribute("class", "child");
             childElement.setAttribute("id", tag.id);
-            childElement.innerHTML = tag.name;
+            childElement.innerHTML = tag.tags_name;
             searchResult.appendChild(childElement);
             const clickElement = document.getElementById(tag.id);
             clickElement.addEventListener("click", () => {

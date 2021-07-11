@@ -178,6 +178,8 @@ GEM
       ast (~> 2.4.1)
     payjp (0.0.7)
       rest-client (~> 2.0)
+    polyamorous (2.3.2)
+      activerecord (>= 5.2.1)
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -220,6 +222,11 @@ GEM
     rainbow (3.0.0)
     raindrops (0.19.2)
     rake (13.0.3)
+    ransack (2.3.2)
+      activerecord (>= 5.2.1)
+      activesupport (>= 5.2.1)
+      i18n
+      polyamorous (= 2.3.2)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -357,6 +364,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 3.11)
   rails (~> 6.0.0)
+  ransack
   rspec-rails (~> 4.0.0)
   rubocop
   sass-rails (~> 5)
